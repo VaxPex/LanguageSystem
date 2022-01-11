@@ -1,6 +1,3 @@
-# LanguageSystem
-you can use it as api
-
 # Example
 ```php
 // Import this
