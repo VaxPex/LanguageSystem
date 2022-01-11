@@ -10,7 +10,7 @@ use VaxPex\LanguageSystem;
 //You need to add test to the both of lang files on the data of the plugin
 if(LanguageSystem::getPlayerLang($player) == "de_DE"){
   $player->sendMessage("de", LanguageSystem::translateString("test"));
-}elseif(LanguageSystem::getPlayerLang($player) == "ru_RU){
+}elseif(LanguageSystem::getPlayerLang($player) == "ru_RU"){
   $player->sendMessage("ru", LanguageSystem::translateString("test"));
 }else{
   $player->sendMessage("test");
