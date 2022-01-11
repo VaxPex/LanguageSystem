@@ -1,7 +1,7 @@
 # LanguageSystem
 you can use it as api
 
-# API
+# Example
 ```php
 // Import this
 use VaxPex\LanguageSystem;
