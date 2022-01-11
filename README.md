@@ -12,4 +12,4 @@ if(LanguageSystem::getPlayerLang($player) == "de_DE"){
   $player->sendMessage("test");
 }
 ```
-#### You can also see the plugin onJoin
+#### You can also see the plugin in the onJoin function
