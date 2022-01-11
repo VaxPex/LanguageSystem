@@ -2,7 +2,7 @@
 you can use it as api
 
 # API
-```
+```php
 // Import this
 use VaxPex\LanguageSystem;
 
