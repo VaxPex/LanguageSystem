@@ -7,7 +7,7 @@ you can use it as api
 use VaxPex\LanguageSystem;
 
 //Example
-//You need to add test to the both of lang files on the data of the plugin
+//You need to add "test" to the both of lang files on the data of the plugin
 if(LanguageSystem::getPlayerLang($player) == "de_DE"){
   $player->sendMessage("de", LanguageSystem::translateString("test"));
 }elseif(LanguageSystem::getPlayerLang($player) == "ru_RU"){
