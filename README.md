@@ -6,9 +6,11 @@ use VaxPex\LanguageSystem;
 
 //Example
 if(LanguageSystem::getPlayerLang($player) == "de_DE"){
-  $player->sendMessage(LanguageSystem::translateString("de_DE", "test")); //You need to add test to the de_DE.json file
+  //You need to add test to the de_DE.json file
+  $player->sendMessage(LanguageSystem::translateString("de_DE", "test"));
 }elseif(LanguageSystem::getPlayerLang($player) == "ru_RU"){
-  $player->sendMessage(LanguageSystem::translateString("ru_RU", "test")); //You need to add test to the ru_RU.json file
+  //You need to add test to the ru_RU.json file
+  $player->sendMessage(LanguageSystem::translateString("ru_RU", "test"));
 }else{
   $player->sendMessage("test");
 }
