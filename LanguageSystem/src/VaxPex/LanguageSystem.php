@@ -42,8 +42,8 @@ class LanguageSystem extends PluginBase implements Listener{
 		if(!is_file(self::getInstance()->getDataFolder().$lang.".json")){
 			throw new \ErrorException("cant find {$lang} as a known language");
 		}else{
-			$config = new Config(self::getInstance()->getDataFolder() . "de_DE.json");
-			return $config->get($k);
+			$config = new Config(self::getInstance()->getDataFolder() . "{$lang}.json");
+			return $config->getNested($k);
 		}
 	}
 }
