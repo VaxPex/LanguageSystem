@@ -1,5 +1,4 @@
-<a href="https://youtu.be/Omu-hsC5ghQ"><img src="https://images.app.goo.gl/h6T1qbc7bcp5DhuQ6"></a>
-
+<a href="https://youtu.be/Omu-hsC5ghQ">Video</a>
 # Example
 ```php
 // Import this
