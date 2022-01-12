@@ -39,10 +39,10 @@ class LanguageSystem extends PluginBase implements Listener{
 	 * @throws \ErrorException
 	 */
 	public static function translateString(string $lang, string $k){
-		if(!is_file(self::getInstance()->getDataFolder().$lang.".json")){
-			throw new \ErrorException("cant find {$lang} as a known language");
+		if(!is_file(self::getInstance()->getDataFolder() . $lang . ".json")){
+			throw new \ErrorException("{$lang} is not a known language");
 		}else{
-			$config = new Config(self::getInstance()->getDataFolder() . "{$lang}.json");
+			$config = new Config(self::getInstance()->getDataFolder() . $lang . ".json");
 			return $config->getNested($k);
 		}
 	}
