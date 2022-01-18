@@ -30,11 +30,11 @@ class LanguageSystem extends PluginBase{
 	/**
 	 * @throws \ErrorException
 	 */
-	public static function translateString(string $lang, string $k){
-		if(!is_file($lang . ".json")){
+	public static function translateString($path, string $lang, string $k){
+		if(!is_file($path . $lang . ".json")){
 			throw new \ErrorException("{$lang} is not a known language");
 		}else{
-			$config = new Config($lang . ".json");
+			$config = new Config($path . $lang . ".json");
 			return $config->getNested($k);
 		}
 	}
