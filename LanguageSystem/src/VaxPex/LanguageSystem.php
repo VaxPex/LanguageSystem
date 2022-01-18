@@ -8,19 +8,11 @@ use pocketmine\event\Listener;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
-use pocketmine\utils\SingletonTrait;
 
-class LanguageSystem extends PluginBase implements Listener{
-
-	use SingletonTrait;
-
-	public function onLoad(){
-		self::setInstance($this);
-	}
+class LanguageSystem extends PluginBase{
 
 	public function onEnable(){
 		$this->saveKnownLanguages();
-		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 
 	public function saveKnownLanguages(){
@@ -39,10 +31,10 @@ class LanguageSystem extends PluginBase implements Listener{
 	 * @throws \ErrorException
 	 */
 	public static function translateString(string $lang, string $k){
-		if(!is_file(self::getInstance()->getDataFolder() . $lang . ".json")){
+		if(!is_file($lang . ".json")){
 			throw new \ErrorException("{$lang} is not a known language");
 		}else{
-			$config = new Config(self::getInstance()->getDataFolder() . $lang . ".json");
+			$config = new Config($lang . ".json");
 			return $config->getNested($k);
 		}
 	}
