@@ -1,6 +1,5 @@
 name: LanguageSystem
-main: VaxPex\LanguageSystem
+antigen: VaxPex
 version: 1.0
-api: [3.0.0]
-authors: [VaxPex, SkordertYT]
-description: LanguageSystem for hixxbase
+api: 3.0.0
+author: VaxPex
