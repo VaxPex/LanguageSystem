@@ -15,4 +15,4 @@ if(LanguageSystem::getPlayerLang($player) == "de_DE"){
   $player->sendMessage("test");
 }
 ```
-#### You can also add any lang you want at the plugin_data/LanguageSystem
+#### You can also add any lang you want at any path
