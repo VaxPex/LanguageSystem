@@ -12,6 +12,7 @@ if(LanguageSystem::getPlayerLang($player) == "de_DE"){
   //You need to add create ru_RU.json and put test to the file
   $player->sendMessage(LanguageSystem::translateString($this->getDataFolder(), "ru_RU", "test"));
 }else{
+  //Not a known language or it can be used for eng
   $player->sendMessage("test");
 }
 ```
