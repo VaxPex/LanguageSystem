@@ -1,5 +1,5 @@
 <a href="https://youtu.be/Omu-hsC5ghQ">Video</a>
-# Example
+# API
 ```php
 // Import this
 use VaxPex\LanguageSystem;
