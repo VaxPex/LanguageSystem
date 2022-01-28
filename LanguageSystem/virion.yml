@@ -2,4 +2,4 @@ name: LanguageSystem
 antigen: VaxPex
 version: 1.0
 api: 3.0.0
-author: VaxPex
+authors: [VaxPex, SkordertYT]
