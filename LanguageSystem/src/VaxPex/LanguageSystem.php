@@ -10,21 +10,12 @@ use pocketmine\utils\Config;
 
 class LanguageSystem
 {
-
-	public static function getPlayerLanguage(Player $player)
-	{
-		return $player->getLocale();
-	}
-
-	/**
-	 * @throws \ErrorException
-	 */
-	public static function translateString($path, string $lang, string $k){
+	public static function translate(string $path, string $lang, string $k, bool $nested){
 		if(!is_file($path . $lang . ".json")){
-			throw new \ErrorException("{$lang} is not a known language");
+			throw new \ErrorException("$lang is not a known language");
 		}else{
 			$config = new Config($path . $lang . ".json");
-			return $config->getNested($k);
+			return $nested === true ? $config->getNested($k) : $config->get($k);
 		}
 	}
 }
